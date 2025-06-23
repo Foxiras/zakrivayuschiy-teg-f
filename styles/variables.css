@@ -1,0 +1,19 @@
+:root {
+    --button-shadow: 2px 2px 0 #000;
+    --bg-image-grad: 
+    repeating-linear-gradient(-45deg, #d3d3d3, 2px, transparent 2px),
+    repeating-linear-gradient(#d3d3d3, 2px, transparent 2px),
+    repeating-linear-gradient(#e7e7e7, #1a1a1a);
+    --base-font-family: Inter;
+    --accent-font-family: PressStat2P;
+    --base-font-wght: 700;
+    --heading-font-wght: 400;
+    --text-color: #000;
+    --base-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);;
+    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --rubber-width: clamp(23.4375rem, 0rem + 100vw, 90rem);
+    --button-color-difference: #fff;
+    --heart-original-color: #000;
+    --heart-animation-color: #FF0000;
+    --border-box: 2px solid #000;
+}
