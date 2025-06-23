@@ -119,8 +119,18 @@
   text-transform: uppercase;
   font-weight: var(--heading-font-wght, 400);
   color: #000;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
+  mix-blend-mode: hard-light; 
+}
+
+@supports (-webkit-text-stroke: 1px #fff) { 
+
+  .watermark { 
+    text-shadow: none; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #fff; 
+
+  }
 }
 
 .section-preparation_photo {
@@ -351,10 +361,11 @@ dialog:not([open]) {
   position: absolute;
   z-index: -1;
   display: block;
-}
-
-.card__like-button::after {
-  transition: all 0.5s ease-in-out;
+  transition:  0.5s ease-in-out;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
 }
 
 .card__like-button:hover::after {
@@ -362,14 +373,7 @@ dialog:not([open]) {
   right: 0;
   top: 0;
   bottom: 0;
-  transition: all 0.6s;
-}
-
-.card__like-button::after {
-  top: 0;
-  bottom: 0;
-  left: -100%;
-  right: 100%;
+  transition:  0.6s;
 }
 
 .section-save-to_box::after {
@@ -378,9 +382,10 @@ dialog:not([open]) {
   position: absolute;
   z-index: -1;
   display: block;
-}
-
-.section-save-to_box::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
   transition: all 0.5s ease-in-out;
 }
 
@@ -390,13 +395,6 @@ dialog:not([open]) {
   top: 0;
   bottom: 0;
   transition: all 0.6s;
-}
-
-.section-save-to_box::after {
-  top: 0;
-  bottom: 0;
-  left: -100%;
-  right: 100%;
 }
 
 .sparks {
