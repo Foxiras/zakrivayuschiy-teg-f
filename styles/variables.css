@@ -1,11 +1,11 @@
 :root {
     --button-shadow: 2px 2px 0 #000;
     --bg-image-grad: 
-    repeating-linear-gradient(-45deg, #d3d3d3, 2px, transparent 2px),
-    repeating-linear-gradient(#d3d3d3, 2px, transparent 2px),
-    repeating-linear-gradient(#e7e7e7, #1a1a1a);
-    --base-font-family: Inter;
-    --accent-font-family: PressStat2P;
+    repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px ), 
+    repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px ), 
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --base-font-family: 'Inter';
+    --accent-font-family: 'PressStat2P';
     --base-font-wght: 700;
     --heading-font-wght: 400;
     --text-color: #000;
