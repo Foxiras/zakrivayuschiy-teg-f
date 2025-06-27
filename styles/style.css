@@ -115,7 +115,7 @@
 
 .section-preparation-pd {
   padding-block-end: 5px;
-  padding-block-start: 2px;
+  padding-block-start: 4px;
 }
 
 .section-box_photo {
@@ -166,7 +166,7 @@
 }
 
 .about-text_text {
-  padding: 18px 29px 0px 26px;
+  padding: 18px 26px 0px 26px;
   font-family: var(--base-font-family, sans-serif), sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -231,7 +231,7 @@
   margin-inline-end: 26px;
   margin-block-end: 5px;
   width: 130px;
-  min-block-size: 40px;
+  min-block-size: 2.48125rem;
   border: 2px solid #000;
 }
 
@@ -270,20 +270,21 @@
   z-index: 1;
   inline-size: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
   margin-block-start: 13px;
-  margin-block-end: 8px;
+  margin-block-end: 10px;
   block-size: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
   mix-blend-mode: difference;
   color: white;
 }
 
 .section-save-top_text {
-  margin-block-start: 3px;
-  margin-block-end: 15px;
-  padding-top: 0px;
+  /* margin-block-start: 3px; */
+  padding-block-end: 13px;
+  padding-block-start: 0px;
   mix-blend-mode: difference;
 }
 
 .poppap__menu {
+  inline-size: clamp(21.5625rem, 21.2104rem + 1.5023vw, 22.5625rem);
   block-size: 195px;
   padding: 0px;
 }
@@ -295,7 +296,6 @@
   gap: 16px;
   overflow: hidden;
   position: fixed;
-  inset: 0;
 }
 
 .poppap__menu::backdrop {
@@ -373,7 +373,7 @@ dialog:not([open]) {
   }
 
   .section-preparation_title {
-    padding-left: 10px;
+    padding-left: 8px;
   }
 
   .watermark {
@@ -427,10 +427,18 @@ dialog:not([open]) {
   }
 
   .section-save-top_text {
-    padding-top: 18px;
+    padding-block: 18px;
   }
 
   .section-preparation-pd {
     padding-top: 6px;
   }
+
+.dialog-photo {
+margin-inline-start: 32px;
+}
+
+.dialog-text {
+padding-block-start: 32px;
+}
 }
