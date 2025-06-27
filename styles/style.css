@@ -411,6 +411,7 @@ dialog:not([open]) {
 
   .section-save-to_box {
     flex-direction: row;
+    padding-left: 17px;
   }
 
   .box-margin {
