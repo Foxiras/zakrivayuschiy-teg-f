@@ -405,13 +405,13 @@ dialog:not([open]) {
 
   .section-save-top_disk {
     transform: scale(0.75);
-    margin-top: 12px;
+    margin-top: 10px;
     margin-right: 5px;
   }
 
   .section-save-to_box {
     flex-direction: row;
-    padding-left: 17px;
+    padding-left: 16px;
   }
 
   .box-margin {
@@ -428,7 +428,8 @@ dialog:not([open]) {
   }
 
   .section-save-top_text {
-    padding-block: 18px;
+    padding-block-start: 20px;
+    padding-block-end: 18px;
   }
 
   .section-preparation-pd {
